@@ -1,0 +1,217 @@
+body {
+  background-image: url('/Users/robertcohen/pun-wars/src/punwarsbackground.png'), linear-gradient(120deg, #870707 0%, #394348 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Page Container */
+.page-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-image: 
+    url('/Users/robertcohen/pun-wars/src/punwarsbackground.png'),
+}
+
+/* AI Container */
+.ai-container {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.custom-navbar {
+  background-image: url('/Users/robertcohen/pun-wars/src/metalcontainerbackground.png');
+  background-size: 1400px 100px;
+
+  /* Add any other styles you want for the background */
+}
+/* Set the text color for all the links and button text in the navbar to white */
+.custom-navbar-container a,
+.custom-navbar-container button {
+  color: white;
+}
+
+/* Set the text color for the "New Game" button text to a different color (e.g., red) */
+.custom-navbar-container .new-game-button {
+  color: black;
+}
+.ai-response-container {
+  padding: 2rem;
+  background-image: 
+    url('/Users/robertcohen/pun-wars/src/metalcontainerbackground.png'), /* Container background */
+    url('/Users/robertcohen/pun-wars/src/jaggedborders.png'); /* Jagged borders image */
+  background-size: cover, 1000px 100px; /* Cover the container with the background image, and set the size of the jagged border image */
+  background-repeat: no-repeat, no-repeat; /* Disable repeat for both images */
+  background-position: center, center; /* Center both images */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  border: #000000;
+  background-color: grey;
+  border-radius: 8px;
+}
+
+/* Middle Container */
+.middle-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: center;
+  
+}
+
+/* Scoreboard Container */
+.scoreboard-container {
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 110px;
+  border:#000000;
+  background-color: grey; /* Set the grey background color */
+  background-image: 
+    url('/Users/robertcohen/pun-wars/src/metalcontainerbackground.png'), /* Container background */
+    url('/Users/robertcohen/pun-wars/src/jaggedborders.png'); /* Jagged borders image */
+  background-size: cover, 300px 104px; /* Cover the container with the background image, and set the size of the jagged border image */
+  background-repeat: no-repeat, no-repeat; /* Disable repeat for both images */
+  background-position: center, center; /* Center both images */
+}
+
+/* Word Generator Container */
+.word-generator-container {
+  padding: 2rem;
+  background-color: grey; /* Set the grey background color */
+  background-image: 
+    url('/Users/robertcohen/pun-wars/src/metalcontainerbackground.png'), /* Container background */
+    url('/Users/robertcohen/pun-wars/src/jaggedborders.png'); /* Jagged borders image */
+  background-size: cover, 300px 104px; /* Cover the container with the background image, and set the size of the jagged border image */
+  background-repeat: no-repeat, no-repeat; /* Disable repeat for both images */
+  background-position: center, center; /* Center both images */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: #000000;
+}
+
+/* Timer Container */
+.timer-container {
+  grid-column: 3;
+  padding: 2rem;
+  background-color: grey; /* Set the grey background color */
+  background-image: 
+    url('/Users/robertcohen/pun-wars/src/metalcontainerbackground.png'), /* Container background */
+    url('/Users/robertcohen/pun-wars/src/jaggedborders.png'); /* Jagged borders image */
+  background-size: cover, 300px 112px; /* Cover the container with the background image, and set the size of the jagged border image */
+  background-repeat: no-repeat, no-repeat; /* Disable repeat for both images */
+  background-position: center, center; /* Center both images */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border:#000000;
+}
+
+/* User Input Container */
+.user-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: grey; /* Set the grey background color */
+  background-image: 
+    url('/Users/robertcohen/pun-wars/src/metalcontainerbackground.png'), /* Container background */
+    url('/Users/robertcohen/pun-wars/src/jaggedborders.png'); /* Jagged borders image */
+  background-size: cover, 1000px 110px; /* Cover the container with the background image, and set the size of the jagged border image */
+  background-repeat: no-repeat, no-repeat; /* Disable repeat for both images */
+  background-position: center, center; /* Center both images */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  margin-bottom: 50px;
+  margin-left: 15px;
+  border: #000000;
+}
+
+.user-submissions {
+  margin-bottom: 1rem;
+}
+
+input[type='text'] {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: transparent;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  background-color: transparent; 
+  text-align: center;
+}
+
+input[type='text']::placeholder {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+button.start-game-button {
+  padding: 5px 5px;
+  border-radius: 4px;
+  border: 1px solid #000000;
+  color: black;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-image: 
+    url('/Users/robertcohen/pun-wars/src/buttonbackground.png');
+  background-size: 90px;
+}
+
+.submitButton{
+  color: black;
+  border: 1px solid #000000;
+  padding: 5px 5px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  background-image: 
+  url('/Users/robertcohen/pun-wars/src/buttonbackground.png');
+background-size: 90px;
+}
+
+.pun-text {
+  font-size: 20px;
+  color: white
+}
+
+.score-text {
+  color: white;
+}
+
+.timer-text {
+  color: white;
+}
+
+
+
+
+
+
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
